@@ -1,0 +1,2260 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TemplateGUI = Instance.new("ScreenGui")
+local TopFrame = Instance.new("Frame")
+local TabNameFrame = Instance.new("Frame")
+local Tabnamedecorframe = Instance.new("Frame")
+local TabNameLabel = Instance.new("TextLabel")
+local Topdecorframe = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local FramesFrame = Instance.new("Frame")
+local HomeFrame = Instance.new("Frame")
+local Creds = Instance.new("TextLabel")
+local Info = Instance.new("TextLabel")
+local AutoAbility = Instance.new("Frame")
+local AutoE = Instance.new("TextButton")
+local AutoR = Instance.new("TextButton")
+local AutoQ = Instance.new("TextButton")
+local AutoF = Instance.new("TextButton")
+local AutoC = Instance.new("TextButton")
+local Autos = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local AutoFarm = Instance.new("Frame")
+local TPFrame1 = Instance.new("Frame")
+local DrCrab = Instance.new("TextButton")
+local Hammerhead = Instance.new("TextButton")
+local Crowned = Instance.new("TextButton")
+local Ninja = Instance.new("TextButton")
+local Pollution = Instance.new("TextButton")
+local BugQueen = Instance.new("TextButton")
+local Phoenix = Instance.new("TextButton")
+local ArmoredBeetle = Instance.new("TextButton")
+local Spike = Instance.new("TextButton")
+local Pogos = Instance.new("TextButton")
+local Baldy = Instance.new("TextButton")
+local Psycho = Instance.new("TextButton")
+local AutoStats = Instance.new("Frame")
+local AutoHealth = Instance.new("TextButton")
+local AutoStamina = Instance.new("TextButton")
+local Credits = Instance.new("Frame")
+local Creds_2 = Instance.new("TextLabel")
+local Info_2 = Instance.new("TextLabel")
+local Info_3 = Instance.new("TextLabel")
+local Info_4 = Instance.new("TextLabel")
+local NavDecorFrame = Instance.new("Frame")
+local NavFrame = Instance.new("ScrollingFrame")
+local HomeTab = Instance.new("TextButton")
+local AutoFarm_2 = Instance.new("TextButton")
+local Autos_2 = Instance.new("TextButton")
+local AutoAbility_2 = Instance.new("TextButton")
+local AutoStats_2 = Instance.new("TextButton")
+local Credits_2 = Instance.new("TextButton")
+local ImageButton = Instance.new("ImageButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+TemplateGUI.Name = "Template GUI"
+TemplateGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TemplateGUI.ResetOnSpawn = false
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = TemplateGUI
+TopFrame.BackgroundColor3 = Color3.fromRGB(43, 44, 47)
+TopFrame.BorderColor3 = Color3.fromRGB(13, 13, 13)
+TopFrame.BorderSizePixel = 0
+TopFrame.Position = UDim2.new(0.163533837, 0, 0.256983221, 0)
+TopFrame.Size = UDim2.new(0, 478, 0, 37)
+
+TabNameFrame.Name = "TabNameFrame"
+TabNameFrame.Parent = TopFrame
+TabNameFrame.BackgroundColor3 = Color3.fromRGB(43, 44, 47)
+TabNameFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TabNameFrame.BorderSizePixel = 0
+TabNameFrame.Position = UDim2.new(0.255230129, 0, 1.00000036, 0)
+TabNameFrame.Size = UDim2.new(0, 356, 0, 30)
+
+Tabnamedecorframe.Name = "Tabnamedecorframe"
+Tabnamedecorframe.Parent = TabNameFrame
+Tabnamedecorframe.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Tabnamedecorframe.BorderSizePixel = 0
+Tabnamedecorframe.Position = UDim2.new(0, 0, 1, 0)
+Tabnamedecorframe.Size = UDim2.new(0, 356, 0, 4)
+
+TabNameLabel.Name = "TabNameLabel"
+TabNameLabel.Parent = TabNameFrame
+TabNameLabel.BackgroundColor3 = Color3.fromRGB(43, 44, 47)
+TabNameLabel.BackgroundTransparency = 1.000
+TabNameLabel.BorderSizePixel = 0
+TabNameLabel.Position = UDim2.new(0.230337068, 0, 0.133332819, 0)
+TabNameLabel.Size = UDim2.new(0, 191, 0, 26)
+TabNameLabel.Font = Enum.Font.Ubuntu
+TabNameLabel.Text = "Home"
+TabNameLabel.TextColor3 = Color3.fromRGB(131, 140, 156)
+TabNameLabel.TextSize = 14.000
+
+Topdecorframe.Name = "Topdecorframe"
+Topdecorframe.Parent = TopFrame
+Topdecorframe.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Topdecorframe.BorderSizePixel = 0
+Topdecorframe.Position = UDim2.new(0, 0, 1, 0)
+Topdecorframe.Size = UDim2.new(0, 478, 0, 4)
+
+Title.Name = "Title"
+Title.Parent = TopFrame
+Title.BackgroundColor3 = Color3.fromRGB(43, 44, 47)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title.BorderSizePixel = 5
+Title.Size = UDim2.new(0, 478, 0, 37)
+Title.Font = Enum.Font.Ubuntu
+Title.Text = "A Hero's Destiny EXPLOIT"
+Title.TextColor3 = Color3.fromRGB(131, 140, 156)
+Title.TextSize = 27.000
+
+Close.Name = "Close"
+Close.Parent = TopFrame
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(43, 44, 47)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.938000023, 0, 0.135000005, 0)
+Close.Size = UDim2.new(0, 26, 0, 26)
+Close.Image = "rbxassetid://3944676352"
+Close.ImageColor3 = Color3.fromRGB(131, 140, 156)
+Close.ScaleType = Enum.ScaleType.Fit
+
+FramesFrame.Name = "FramesFrame"
+FramesFrame.Parent = TopFrame
+FramesFrame.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+FramesFrame.BorderSizePixel = 0
+FramesFrame.Position = UDim2.new(0.255230129, 0, 1.91891932, 0)
+FramesFrame.Size = UDim2.new(0, 356, 0, 207)
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = FramesFrame
+HomeFrame.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Size = UDim2.new(0, 356, 0, 207)
+
+Creds.Name = "Creds"
+Creds.Parent = HomeFrame
+Creds.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+Creds.BackgroundTransparency = 1.000
+Creds.BorderSizePixel = 0
+Creds.Position = UDim2.new(0.0308988765, 0, 0.0640627444, 0)
+Creds.Size = UDim2.new(0, 334, 0, 34)
+Creds.Font = Enum.Font.Ubuntu
+Creds.Text = "GUI Made by UnknownRO"
+Creds.TextColor3 = Color3.fromRGB(131, 140, 156)
+Creds.TextSize = 14.000
+
+Info.Name = "Info"
+Info.Parent = HomeFrame
+Info.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+Info.BackgroundTransparency = 1.000
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0.0308988765, 0, 0.225979596, 0)
+Info.Size = UDim2.new(0, 334, 0, 42)
+Info.Font = Enum.Font.Ubuntu
+Info.Text = "All scripts are made by the OWNER"
+Info.TextColor3 = Color3.fromRGB(131, 140, 156)
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+AutoAbility.Name = "AutoAbility"
+AutoAbility.Parent = FramesFrame
+AutoAbility.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+AutoAbility.BorderSizePixel = 0
+AutoAbility.Size = UDim2.new(0, 356, 0, 207)
+AutoAbility.Visible = false
+
+AutoE.Name = "AutoE"
+AutoE.Parent = AutoAbility
+AutoE.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoE.BorderSizePixel = 0
+AutoE.Position = UDim2.new(0.494382024, -54, 0.16183576, -12)
+AutoE.Size = UDim2.new(0, 108, 0, 25)
+AutoE.Font = Enum.Font.Ubuntu
+AutoE.Text = "Auto E : Off"
+AutoE.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoE.TextSize = 14.000
+
+AutoR.Name = "AutoR"
+AutoR.Parent = AutoAbility
+AutoR.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoR.BorderSizePixel = 0
+AutoR.Position = UDim2.new(0.994382024, -117, 0.16183576, -12)
+AutoR.Size = UDim2.new(0, 108, 0, 25)
+AutoR.Font = Enum.Font.Ubuntu
+AutoR.Text = "Auto R : Off"
+AutoR.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoR.TextSize = 14.000
+
+AutoQ.Name = "AutoQ"
+AutoQ.Parent = AutoAbility
+AutoQ.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoQ.BorderSizePixel = 0
+AutoQ.Position = UDim2.new(-0.00561797759, 9, 0.16183576, -12)
+AutoQ.Size = UDim2.new(0, 108, 0, 25)
+AutoQ.Font = Enum.Font.Ubuntu
+AutoQ.Text = "Auto Q : Off"
+AutoQ.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoQ.TextSize = 14.000
+
+AutoF.Name = "AutoF"
+AutoF.Parent = AutoAbility
+AutoF.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoF.BorderSizePixel = 0
+AutoF.Position = UDim2.new(0.994382024, -117, 0.422705293, -12)
+AutoF.Size = UDim2.new(0, 108, 0, 25)
+AutoF.Font = Enum.Font.Ubuntu
+AutoF.Text = "Auto F : Off"
+AutoF.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoF.TextSize = 14.000
+
+AutoC.Name = "AutoC"
+AutoC.Parent = AutoAbility
+AutoC.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoC.BorderSizePixel = 0
+AutoC.Position = UDim2.new(-0.00561797759, 9, 0.422705293, -12)
+AutoC.Size = UDim2.new(0, 108, 0, 25)
+AutoC.Font = Enum.Font.Ubuntu
+AutoC.Text = "Auto C : Off"
+AutoC.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoC.TextSize = 14.000
+
+Autos.Name = "Autos"
+Autos.Parent = FramesFrame
+Autos.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+Autos.BorderSizePixel = 0
+Autos.Size = UDim2.new(0, 356, 0, 207)
+Autos.Visible = false
+
+TextButton.Parent = Autos
+TextButton.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.00561797712, 9, 0.113526568, -12)
+TextButton.Size = UDim2.new(0, 334, 0, 42)
+TextButton.Font = Enum.Font.Ubuntu
+TextButton.Text = "Auto- Train : Off"
+TextButton.TextColor3 = Color3.fromRGB(179, 190, 216)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = Autos
+TextButton_2.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.00842696615, 9, 0.45652172, -12)
+TextButton_2.Size = UDim2.new(0, 334, 0, 42)
+TextButton_2.Font = Enum.Font.Ubuntu
+TextButton_2.Text = "Auto-Punch : Off"
+TextButton_2.TextColor3 = Color3.fromRGB(179, 190, 216)
+TextButton_2.TextSize = 14.000
+
+TextButton_3.Parent = Autos
+TextButton_3.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.00842696615, 9, 0.799516916, -12)
+TextButton_3.Size = UDim2.new(0, 334, 0, 42)
+TextButton_3.Font = Enum.Font.Ubuntu
+TextButton_3.Text = "Use All Codes"
+TextButton_3.TextColor3 = Color3.fromRGB(179, 190, 216)
+TextButton_3.TextSize = 14.000
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = FramesFrame
+AutoFarm.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Size = UDim2.new(0, 356, 0, 207)
+AutoFarm.Visible = false
+
+TPFrame1.Name = "TPFrame1"
+TPFrame1.Parent = AutoFarm
+TPFrame1.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+TPFrame1.BorderSizePixel = 0
+TPFrame1.Position = UDim2.new(-0.00280897319, 0, 0.125603855, 0)
+TPFrame1.Size = UDim2.new(0, 357, 0, 181)
+
+DrCrab.Name = "Bahiri"
+DrCrab.Parent = TPFrame1
+DrCrab.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+DrCrab.BorderSizePixel = 0
+DrCrab.Position = UDim2.new(0.348701984, 0, -0.0964618996, 0)
+DrCrab.Size = UDim2.new(0, 108, 0, 25)
+DrCrab.Font = Enum.Font.Ubuntu
+DrCrab.Text = "Bahiri : Off"
+DrCrab.TextColor3 = Color3.fromRGB(179, 190, 216)
+DrCrab.TextSize = 14.000
+
+Hammerhead.Name = "Hammerhead"
+Hammerhead.Parent = TPFrame1
+Hammerhead.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Hammerhead.BorderSizePixel = 0
+Hammerhead.Position = UDim2.new(0.0209708754, 0, -0.0964618921, 0)
+Hammerhead.Size = UDim2.new(0, 108, 0, 25)
+Hammerhead.Font = Enum.Font.Ubuntu
+Hammerhead.Text = "HeadSteel : Off"
+Hammerhead.TextColor3 = Color3.fromRGB(179, 190, 216)
+Hammerhead.TextSize = 14.000
+
+Crowned.Name = "Crowned"
+Crowned.Parent = TPFrame1
+Crowned.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Crowned.BorderSizePixel = 0
+Crowned.Position = UDim2.new(0.684836447, 0, -0.0964618996, 0)
+Crowned.Size = UDim2.new(0, 108, 0, 25)
+Crowned.Font = Enum.Font.Ubuntu
+Crowned.Text = "Crowned Monster : Off"
+Crowned.TextColor3 = Color3.fromRGB(179, 190, 216)
+Crowned.TextSize = 14.000
+
+Ninja.Name = "Ninja"
+Ninja.Parent = TPFrame1
+Ninja.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Ninja.BorderSizePixel = 0
+Ninja.Position = UDim2.new(0.020970881, 0, 0.119007707, 0)
+Ninja.Size = UDim2.new(0, 108, 0, 25)
+Ninja.Font = Enum.Font.Ubuntu
+Ninja.Text = "Ninja : Off"
+Ninja.TextColor3 = Color3.fromRGB(179, 190, 216)
+Ninja.TextSize = 14.000
+
+Pollution.Name = "Pollution"
+Pollution.Parent = TPFrame1
+Pollution.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Pollution.BorderSizePixel = 0
+Pollution.Position = UDim2.new(0.343099743, 0, 0.119007714, 0)
+Pollution.Size = UDim2.new(0, 108, 0, 25)
+Pollution.Font = Enum.Font.Ubuntu
+Pollution.Text = "God Of Pollution : Off"
+Pollution.TextColor3 = Color3.fromRGB(179, 190, 216)
+Pollution.TextSize = 14.000
+
+BugQueen.Name = "Bug Queen"
+BugQueen.Parent = TPFrame1
+BugQueen.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+BugQueen.BorderSizePixel = 0
+BugQueen.Position = UDim2.new(0.684836447, 0, 0.113482855, 0)
+BugQueen.Size = UDim2.new(0, 108, 0, 25)
+BugQueen.Font = Enum.Font.Ubuntu
+BugQueen.Text = "Bug Queen :Off"
+BugQueen.TextColor3 = Color3.fromRGB(179, 190, 216)
+BugQueen.TextSize = 14.000
+
+Phoenix.Name = "Phoenix"
+Phoenix.Parent = TPFrame1
+Phoenix.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Phoenix.BorderSizePixel = 0
+Phoenix.Position = UDim2.new(0.0321753621, 0, 0.345527053, 0)
+Phoenix.Size = UDim2.new(0, 108, 0, 25)
+Phoenix.Font = Enum.Font.Ubuntu
+Phoenix.Text = "Phoenix : Off"
+Phoenix.TextColor3 = Color3.fromRGB(179, 190, 216)
+Phoenix.TextSize = 14.000
+
+ArmoredBeetle.Name = "Armored Beetle"
+ArmoredBeetle.Parent = TPFrame1
+ArmoredBeetle.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+ArmoredBeetle.BorderSizePixel = 0
+ArmoredBeetle.Position = UDim2.new(0.348701984, 0, 0.345527053, 0)
+ArmoredBeetle.Size = UDim2.new(0, 108, 0, 25)
+ArmoredBeetle.Font = Enum.Font.Ubuntu
+ArmoredBeetle.Text = "Armored Beetle : Off"
+ArmoredBeetle.TextColor3 = Color3.fromRGB(179, 190, 216)
+ArmoredBeetle.TextSize = 14.000
+
+Spike.Name = "Spike"
+Spike.Parent = TPFrame1
+Spike.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Spike.BorderSizePixel = 0
+Spike.Position = UDim2.new(0.684836447, 0, 0.345527053, 0)
+Spike.Size = UDim2.new(0, 108, 0, 25)
+Spike.Font = Enum.Font.Ubuntu
+Spike.Text = "Spike : Off"
+Spike.TextColor3 = Color3.fromRGB(179, 190, 216)
+Spike.TextSize = 14.000
+
+Pogos.Name = "Pogos"
+Pogos.Parent = TPFrame1
+Pogos.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Pogos.BorderSizePixel = 0
+Pogos.Position = UDim2.new(0.020970881, 0, 0.555471838, 0)
+Pogos.Size = UDim2.new(0, 108, 0, 25)
+Pogos.Font = Enum.Font.Ubuntu
+Pogos.Text = "Pogos : Off"
+Pogos.TextColor3 = Color3.fromRGB(179, 190, 216)
+Pogos.TextSize = 14.000
+
+Baldy.Name = "Baldy"
+Baldy.Parent = TPFrame1
+Baldy.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Baldy.BorderSizePixel = 0
+Baldy.Position = UDim2.new(0.348701984, 0, 0.560996652, 0)
+Baldy.Size = UDim2.new(0, 108, 0, 25)
+Baldy.Font = Enum.Font.Ubuntu
+Baldy.Text = "Baldy : Off"
+Baldy.TextColor3 = Color3.fromRGB(179, 190, 216)
+Baldy.TextSize = 14.000
+
+Psycho.Name = "Psycho"
+Psycho.Parent = TPFrame1
+Psycho.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+Psycho.BorderSizePixel = 0
+Psycho.Position = UDim2.new(0.684836447, 0, 0.555471778, 0)
+Psycho.Size = UDim2.new(0, 108, 0, 25)
+Psycho.Font = Enum.Font.Ubuntu
+Psycho.Text = "Psycho : Off"
+Psycho.TextColor3 = Color3.fromRGB(179, 190, 216)
+Psycho.TextSize = 14.000
+
+AutoStats.Name = "AutoStats"
+AutoStats.Parent = FramesFrame
+AutoStats.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+AutoStats.BorderSizePixel = 0
+AutoStats.Size = UDim2.new(0, 356, 0, 207)
+AutoStats.Visible = false
+
+AutoHealth.Name = "AutoHealth"
+AutoHealth.Parent = AutoStats
+AutoHealth.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoHealth.BorderSizePixel = 0
+AutoHealth.Position = UDim2.new(0.179775283, 9, 0.166666672, -12)
+AutoHealth.Size = UDim2.new(0, 209, 0, 52)
+AutoHealth.Font = Enum.Font.Ubuntu
+AutoHealth.Text = "Auto Health : Off"
+AutoHealth.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoHealth.TextScaled = true
+AutoHealth.TextSize = 14.000
+AutoHealth.TextWrapped = true
+
+AutoStamina.Name = "AutoStamina"
+AutoStamina.Parent = AutoStats
+AutoStamina.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+AutoStamina.BorderSizePixel = 0
+AutoStamina.Position = UDim2.new(0.179775283, 9, 0.543478251, -12)
+AutoStamina.Size = UDim2.new(0, 209, 0, 52)
+AutoStamina.Font = Enum.Font.Ubuntu
+AutoStamina.Text = "Auto Stamina : Off"
+AutoStamina.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoStamina.TextScaled = true
+AutoStamina.TextSize = 14.000
+AutoStamina.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = FramesFrame
+Credits.BackgroundColor3 = Color3.fromRGB(51, 53, 61)
+Credits.BorderSizePixel = 0
+Credits.Size = UDim2.new(0, 356, 0, 207)
+Credits.Visible = false
+
+Creds_2.Name = "Creds"
+Creds_2.Parent = Credits
+Creds_2.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+Creds_2.BackgroundTransparency = 1.000
+Creds_2.BorderSizePixel = 0
+Creds_2.Position = UDim2.new(0.0308988765, 0, 0.0640627444, 0)
+Creds_2.Size = UDim2.new(0, 334, 0, 34)
+Creds_2.Font = Enum.Font.Ubuntu
+Creds_2.Text = "GUI Made by UnknownRO"
+Creds_2.TextColor3 = Color3.fromRGB(131, 140, 156)
+Creds_2.TextSize = 14.000
+
+Info_2.Name = "Info"
+Info_2.Parent = Credits
+Info_2.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+Info_2.BackgroundTransparency = 1.000
+Info_2.BorderSizePixel = 0
+Info_2.Position = UDim2.new(0.0308988765, 0, 0.225979596, 0)
+Info_2.Size = UDim2.new(0, 334, 0, 42)
+Info_2.Font = Enum.Font.Ubuntu
+Info_2.Text = "All scripts are made by the OWNER"
+Info_2.TextColor3 = Color3.fromRGB(131, 140, 156)
+Info_2.TextSize = 14.000
+Info_2.TextWrapped = true
+
+Info_3.Name = "Info"
+Info_3.Parent = Credits
+Info_3.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+Info_3.BackgroundTransparency = 1.000
+Info_3.BorderSizePixel = 0
+Info_3.Position = UDim2.new(0.0224719103, 0, 0.660762191, 0)
+Info_3.Size = UDim2.new(0, 334, 0, 42)
+Info_3.Font = Enum.Font.Ubuntu
+Info_3.Text = "https://unknownro.carrd.co/"
+Info_3.TextColor3 = Color3.fromRGB(131, 140, 156)
+Info_3.TextSize = 14.000
+Info_3.TextWrapped = true
+
+Info_4.Name = "Info"
+Info_4.Parent = Credits
+Info_4.BackgroundColor3 = Color3.fromRGB(51, 53, 62)
+Info_4.BackgroundTransparency = 1.000
+Info_4.BorderSizePixel = 0
+Info_4.Position = UDim2.new(0.0308988765, 0, 0.457863629, 0)
+Info_4.Size = UDim2.new(0, 334, 0, 42)
+Info_4.Font = Enum.Font.Ubuntu
+Info_4.Text = "Our Site"
+Info_4.TextColor3 = Color3.fromRGB(156, 0, 2)
+Info_4.TextScaled = true
+Info_4.TextSize = 14.000
+Info_4.TextWrapped = true
+
+NavDecorFrame.Name = "NavDecorFrame"
+NavDecorFrame.Parent = TopFrame
+NavDecorFrame.BackgroundColor3 = Color3.fromRGB(57, 61, 68)
+NavDecorFrame.BorderSizePixel = 0
+NavDecorFrame.Position = UDim2.new(0.24608621, 0, 0.995866537, 0)
+NavDecorFrame.Size = UDim2.new(0, 4, 0, 241)
+
+NavFrame.Name = "NavFrame"
+NavFrame.Parent = TopFrame
+NavFrame.BackgroundColor3 = Color3.fromRGB(43, 44, 47)
+NavFrame.BorderColor3 = Color3.fromRGB(13, 13, 13)
+NavFrame.BorderSizePixel = 0
+NavFrame.Position = UDim2.new(0, 0, 1.10810816, 0)
+NavFrame.Size = UDim2.new(0, 118, 0, 237)
+NavFrame.CanvasSize = UDim2.new(0, 0, 100, 0)
+NavFrame.ScrollBarThickness = 0
+
+HomeTab.Name = "HomeTab"
+HomeTab.Parent = NavFrame
+HomeTab.BackgroundColor3 = Color3.fromRGB(56, 60, 67)
+HomeTab.BorderColor3 = Color3.fromRGB(43, 44, 47)
+HomeTab.Size = UDim2.new(0, 118, 0, 26)
+HomeTab.Font = Enum.Font.Ubuntu
+HomeTab.Text = "Home"
+HomeTab.TextColor3 = Color3.fromRGB(179, 190, 216)
+HomeTab.TextSize = 14.000
+
+AutoFarm_2.Name = "Auto-Farm"
+AutoFarm_2.Parent = NavFrame
+AutoFarm_2.BackgroundColor3 = Color3.fromRGB(56, 60, 67)
+AutoFarm_2.BorderColor3 = Color3.fromRGB(43, 44, 47)
+AutoFarm_2.Position = UDim2.new(0, 0, 0.0070270272, 0)
+AutoFarm_2.Size = UDim2.new(0, 118, 0, 26)
+AutoFarm_2.Font = Enum.Font.Ubuntu
+AutoFarm_2.Text = "Auto-Farm"
+AutoFarm_2.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoFarm_2.TextSize = 14.000
+
+Autos_2.Name = "Autos"
+Autos_2.Parent = NavFrame
+Autos_2.BackgroundColor3 = Color3.fromRGB(56, 60, 67)
+Autos_2.BorderColor3 = Color3.fromRGB(43, 44, 47)
+Autos_2.Position = UDim2.new(0, 0, 0.0140540544, 0)
+Autos_2.Size = UDim2.new(0, 118, 0, 26)
+Autos_2.Font = Enum.Font.Ubuntu
+Autos_2.Text = "Autos / Stuff"
+Autos_2.TextColor3 = Color3.fromRGB(179, 190, 216)
+Autos_2.TextSize = 14.000
+
+AutoAbility_2.Name = "AutoAbility"
+AutoAbility_2.Parent = NavFrame
+AutoAbility_2.BackgroundColor3 = Color3.fromRGB(56, 60, 67)
+AutoAbility_2.BorderColor3 = Color3.fromRGB(43, 44, 47)
+AutoAbility_2.Position = UDim2.new(0, 0, 0.0210810825, 0)
+AutoAbility_2.Size = UDim2.new(0, 118, 0, 26)
+AutoAbility_2.Font = Enum.Font.Ubuntu
+AutoAbility_2.Text = "AutoAbility"
+AutoAbility_2.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoAbility_2.TextSize = 14.000
+
+AutoStats_2.Name = "AutoStats"
+AutoStats_2.Parent = NavFrame
+AutoStats_2.BackgroundColor3 = Color3.fromRGB(56, 60, 67)
+AutoStats_2.BorderColor3 = Color3.fromRGB(43, 44, 47)
+AutoStats_2.Position = UDim2.new(0, 0, 0.0283783805, 0)
+AutoStats_2.Size = UDim2.new(0, 118, 0, 26)
+AutoStats_2.Font = Enum.Font.Ubuntu
+AutoStats_2.Text = "Auto-Stats"
+AutoStats_2.TextColor3 = Color3.fromRGB(179, 190, 216)
+AutoStats_2.TextSize = 14.000
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = NavFrame
+Credits_2.BackgroundColor3 = Color3.fromRGB(56, 60, 67)
+Credits_2.BorderColor3 = Color3.fromRGB(43, 44, 47)
+Credits_2.Position = UDim2.new(0, 0, 0.0354054086, 0)
+Credits_2.Size = UDim2.new(0, 118, 0, 26)
+Credits_2.Font = Enum.Font.Ubuntu
+Credits_2.Text = "Credits"
+Credits_2.TextColor3 = Color3.fromRGB(179, 190, 216)
+Credits_2.TextSize = 14.000
+
+ImageButton.Parent = TopFrame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.881166339, 0, 0.266266286, 0)
+ImageButton.Size = UDim2.new(0, 20, 0, 21)
+ImageButton.Image = "http://www.roblox.com/asset/?id=4895169359"
+
+Open.Name = "Open"
+Open.Parent = TemplateGUI
+Open.BackgroundColor3 = Color3.fromRGB(4, 255, 0)
+Open.BackgroundTransparency = 0.400
+Open.LayoutOrder = 1
+Open.Position = UDim2.new(0.268933088, 0, 0.924910605, 0)
+Open.Size = UDim2.new(0, 55, 0, 40)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "X"
+Open.TextColor3 = Color3.fromRGB(216, 216, 216)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function FWVCNKZ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.Open.Visible = true
+	end)
+end
+coroutine.wrap(FWVCNKZ_fake_script)()
+local function BGYMMVB_fake_script() -- AutoE.LocalScript 
+	local script = Instance.new('LocalScript', AutoE)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto E : Off" then
+			button.Text = "Auto E : On"
+	
+			getgenv().autoabilityE = true
+			while autoabilityE do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'E',false,uwu)
+				wait(1)
+			end
+		else
+			button.Text = "Auto E : Off"
+			getgenv().autoabilityE = false
+			while autoabilityE do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'E',false,uwu)
+				wait(1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BGYMMVB_fake_script)()
+local function CXDQ_fake_script() -- AutoR.LocalScript 
+	local script = Instance.new('LocalScript', AutoR)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto R : Off" then
+			button.Text = "Auto R : On"
+	
+			getgenv().autoabilityR = true
+			while autoabilityR do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'R',false,uwu)
+				wait(1)
+			end
+		else
+			button.Text = "Auto R : Off"
+			getgenv().autoabilityR = false
+			while autoabilityR do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'R',false,uwu)
+				wait(1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(CXDQ_fake_script)()
+local function JVWYD_fake_script() -- AutoQ.LocalScript 
+	local script = Instance.new('LocalScript', AutoQ)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto Q : Off" then
+			button.Text = "Auto Q : On"
+	
+			getgenv().autoabilityQ = true
+			while autoabilityQ do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'Q',false,uwu)
+				wait(1)
+			end
+		else
+			button.Text = "Auto Q : Off"
+			getgenv().autoabilityQ = false
+			while autoabilityQ do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'Q',false,uwu)
+				wait(1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(JVWYD_fake_script)()
+local function WGHRZM_fake_script() -- AutoF.LocalScript 
+	local script = Instance.new('LocalScript', AutoF)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto F : Off" then
+			button.Text = "Auto F : On"
+	
+			getgenv().autoabilityF = true
+			while autoabilityF do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'F',false,uwu)
+				wait(1)
+			end
+		else
+			button.Text = "Auto F : Off"
+			getgenv().autoabilityF = false
+			while autoabilityF do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'F',false,uwu)
+				wait(1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(WGHRZM_fake_script)()
+local function UALRCY_fake_script() -- AutoC.LocalScript 
+	local script = Instance.new('LocalScript', AutoC)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto C : Off" then
+			button.Text = "Auto C : On"
+	
+			getgenv().autoabilityC = true
+			while autoabilityC do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'C',false,uwu)
+				wait(1)
+			end
+		else
+			button.Text = "Auto C : Off"
+			getgenv().autoabilityC = false
+			while autoabilityC do 
+				game:GetService('VirtualInputManager'):SendKeyEvent(true,'C',false,uwu)
+				wait(1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(UALRCY_fake_script)()
+local function BNKFW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto- Train : Off" then
+			button.Text = "Auto- Train : On"
+			getgenv().autofarm = true
+			while autofarm do 
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Train"
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(0.1)
+			end
+		else
+			button.Text = "Auto- Train : Off"
+			getgenv().autofarm = false
+			while autofarm do 
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Train"
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(0.1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BNKFW_fake_script)()
+local function UNQN_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto-Punch : Off" then
+			button.Text = "Auto-Punch : On"
+			getgenv().autofarm = true
+			while autofarm do 
+				local args = {
+					[1] = "Punch",
+					[2] = "Left"
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(0.1)
+			end
+		else
+			button.Text = "Auto-Punch : Off"
+			getgenv().autofarm = false
+			while autofarm do 
+				local args = {
+					[1] = "Punch",
+					[2] = "Left"
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(0.1)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(UNQN_fake_script)()
+local function NWGUM_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Use All Codes" then
+			local args = {
+				[1] = "rok"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "playdemonblade"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "250kfavsyass"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "panda"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "gravity"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "dhm"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "140klikes"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = "platinum"
+			}
+	
+			game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(unpack(args))
+	
+		end
+	end)
+	
+end
+coroutine.wrap(NWGUM_fake_script)()
+local function JZAFO_fake_script() -- Bahiri.LocalScript 
+	local script = Instance.new('LocalScript', Bahiri)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Bahiri : Off" then
+			button.Text = "Bahiri : On"
+	
+			getgenv().autofarm19 = true--true to make it on,false to make it sto
+			while autofarm19 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 19
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+	end
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm19 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Bahiri:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Bahiri" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm19 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm19 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Bahiri : Off"
+	
+			getgenv().autofarm19 = false--true to make it on,false to make it stop
+			while autofarm19 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 19
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm19 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Bahiri:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Bahiri" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm19 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm19 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(JZAFO_fake_script)()
+local function FIRS_fake_script() -- Hammerhead.LocalScript 
+	local script = Instance.new('LocalScript', Hammerhead)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "HeadSteel : Off" then
+			button.Text = "HeadSteel : On"
+	
+			getgenv().autofarm3 = true--true to make it on,false to make it stop
+			while autofarm3 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(5)
+			end
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm3 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Hammerhead:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Hammerhead" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm3 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm3 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "HeadSteel : Off"
+	
+			getgenv().autofarm3 = false--true to make it on,false to make it stop
+			while autofarm3 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(5)
+			end
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm3 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Hammerhead:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Hammerhead" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm3 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm3 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(FIRS_fake_script)()
+local function ERIVRN_fake_script() -- Crowned.LocalScript 
+	local script = Instance.new('LocalScript', Crowned)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Crowned Monster : Off" then
+			button.Text = "Crowned Monster : On"
+	
+			getgenv().autofarm9 = true--true to make it on,false to make it stop
+			while autofarm9 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 9
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm9 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.SeaKing:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "SeaKing" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm9 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm9 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Crowned Monster : Off"
+	
+			getgenv().autofarm9 = false--true to make it on,false to make it stop
+			while autofarm9 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 9
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm9 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.SeaKing:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "SeaKing" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm9 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm9 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm9 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(ERIVRN_fake_script)()
+local function AOQL_fake_script() -- Ninja.LocalScript 
+	local script = Instance.new('LocalScript', Ninja)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Ninja : Off" then
+			button.Text = "Ninja : On"
+	
+			getgenv().autofarm10 = true--true to make it on,false to make it stop
+			while autofarm10 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 10
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm10 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Sonic:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Sonic" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm10 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm10 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Ninja : Off"
+	
+			getgenv().autofarm10 = false--true to make it on,false to make it stop
+			while autofarm10 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 10
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm10 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Sonic:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Sonic" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm10 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm10 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(AOQL_fake_script)()
+local function EHTYV_fake_script() -- Pollution.LocalScript 
+	local script = Instance.new('LocalScript', Pollution)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "God Of Pollution : Off" then
+			button.Text = "God Of Pollution : On"
+	
+			getgenv().autofarm11 = true--true to make it on,false to make it stop
+	
+			while autofarm11 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 11
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm11 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.VaccineMan:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "VaccineMan" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm11 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm11 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "God Of Pollution : Off"
+	
+			getgenv().autofarm11 = false --true to make it on,false to make it stop
+	
+			while autofarm11 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 11
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm11 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.VaccineMan:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "VaccineMan" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm11 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm11 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(EHTYV_fake_script)()
+local function PCPGPSI_fake_script() -- BugQueen.LocalScript 
+	local script = Instance.new('LocalScript', BugQueen)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Bug Queen :Off" then
+			button.Text = "Bug Queen :On"
+	
+			getgenv().autofarm12 = true--true to make it on,false to make it stop
+	
+			while autofarm12 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 12
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm12 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.MosquitoGirl:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "MosquitoGirl" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm12 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm12 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Bug Queen :Off"
+	
+			getgenv().autofarm12 = false --true to make it on,false to make it stop
+	
+			while autofarm12 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 12
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm12 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.MosquitoGirl:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "MosquitoGirl" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm12 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm12 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(PCPGPSI_fake_script)()
+local function SRKCUP_fake_script() -- Phoenix.LocalScript 
+	local script = Instance.new('LocalScript', Phoenix)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Phoenix : Off" then
+			button.Text = "Phoenix : On"
+	
+			getgenv().autofarm13 = true--true to make it on,false to make it stop
+	
+			while autofarm13 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 13
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm13 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Phoenix:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Phoenix" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm13 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm13 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Phoenix : Off"
+	
+			getgenv().autofarm13 = false--true to make it on,false to make it stop
+	
+			while autofarm13 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 13
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm13 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Phoenix:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Phoenix" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm13 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm13 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(SRKCUP_fake_script)()
+local function BCPE_fake_script() -- ArmoredBeetle.LocalScript 
+	local script = Instance.new('LocalScript', ArmoredBeetle)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "God Of Pollution : Off" then
+			button.Text = "God Of Pollution : On"
+	
+			getgenv().autofarm14 = true--true to make it on,false to make it stop
+	
+			while autofarm14 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 14
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm14 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Kabuto:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Kabuto" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm14 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm14 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "God Of Pollution : Off"
+	
+			getgenv().autofarm14 = false--true to make it on,false to make it stop
+	
+			while autofarm14 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 14
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm14 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Kabuto:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Kabuto" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm14 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm14 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(BCPE_fake_script)()
+local function WOJXDOD_fake_script() -- Spike.LocalScript 
+	local script = Instance.new('LocalScript', Spike)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Spike : Off" then
+			button.Text = "Spike : On"
+	
+			getgenv().autofarm15 = true--true to make it on,false to make it stop
+	
+			while autofarm15 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 15
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm15 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Gouketsu:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Gouketsu" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm15 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm15 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Spike : Off"
+	
+			getgenv().autofarm15 = false--true to make it on,false to make it stop
+	
+			while autofarm15 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 15
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm15 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Gouketsu:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Gouketsu" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm15 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm15 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(WOJXDOD_fake_script)()
+local function KGCQR_fake_script() -- Pogos.LocalScript 
+	local script = Instance.new('LocalScript', Pogos)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Pogos : Off" then
+			button.Text = "Pogos : On"
+	
+			getgenv().autofarm16 = true--true to make it on,false to make it stop
+	
+			while autofarm16 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 16
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm16 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Boros:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Boros" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm16 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm16 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Pogos : Off"
+	
+			getgenv().autofarm16 = false--true to make it on,false to make it stop
+	
+			while autofarm16 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 16
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm16 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Boros:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Boros" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm16 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm16 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(KGCQR_fake_script)()
+local function ZQZXXTW_fake_script() -- Baldy.LocalScript 
+	local script = Instance.new('LocalScript', Baldy)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Baldy : Off" then
+			button.Text = "Baldy : On"
+	
+			getgenv().autofarm17 = true--true to make it on,false to make it stop
+	
+			while autofarm17 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 17
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm17 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Charanko:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Charanko" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm17 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm17 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Baldy : Off"
+	
+			getgenv().autofarm17 = false--true to make it on,false to make it stop
+	
+			while autofarm17 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 17
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm17 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Charanko:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Charanko" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm17 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm17 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(ZQZXXTW_fake_script)()
+local function TKMF_fake_script() -- Psycho.LocalScript 
+	local script = Instance.new('LocalScript', Psycho)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Psycho : Off" then
+			button.Text = "Psycho : On"
+	
+			getgenv().autofarm18 = true--true to make it on,false to make it stop
+	
+			while autofarm18 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 18
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm18 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Psykos:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Psykos" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm18 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm18 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		else
+			button.Text = "Psycho : Off"
+	
+			getgenv().autofarm18 = false--true to make it on,false to make it stop
+	
+			while autofarm18 do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "GetQuest",
+					[2] = 18
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(5)
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Selected
+			end
+	
+	
+			coroutine.wrap(function()
+				while wait() do
+					if getgenv().autofarm18 == true then
+						pcall(function()
+							for i,v in pairs(game:GetService("Workspace").Spawns.Psykos:GetChildren()) do --enemy location
+								if v:IsA("Model") and v.Name == "Psykos" then --remove this if you want farm all mobs 
+									if v.Humanoid.Health > 0 and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
+										repeat
+											wait()
+											game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+										until v.Humanoid.Health <= 0 or getgenv().autofarm18 == false
+									end
+								end
+							end
+						end)
+					end
+				end
+			end)()
+	
+	
+			--no clip on when you start to farm,you can remove it if you dont want use noclip
+			game:GetService("RunService").RenderStepped:Connect(function() 
+				if autofarm18 == true then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(TKMF_fake_script)()
+local function VGMFHJF_fake_script() -- AutoHealth.LocalScript 
+	local script = Instance.new('LocalScript', AutoHealth)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto Health : Off" then
+			button.Text = "Auto Health : On"
+	
+			getgenv().autohealth = true
+			while autohealth do 
+	
+				local args = {
+					[1] = "UpgradeHealth",
+					[2] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(4)
+			end
+		else
+			button.Text = "Auto Health : Off"
+			getgenv().autohealth = false
+			while autohealth do 
+				local args = {
+					[1] = "UpgradeHealth",
+					[2] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+				wait(4)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(VGMFHJF_fake_script)()
+local function VOEKD_fake_script() -- AutoStamina.LocalScript 
+	local script = Instance.new('LocalScript', AutoStamina)
+
+	local button = script.Parent
+	script.Parent.MouseButton1Down:connect(function()
+		if script.Parent.Text == "Auto Stamina : Off" then
+			button.Text = "Auto Stamina : On"
+	
+			getgenv().autostamina = true
+			while autostamina do 
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "UpgradeStamina",
+					[2] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(4)
+			end
+		else
+			button.Text = "Auto Stamina : Off"
+			getgenv().autostamina = false
+			while autostamina do 
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "UpgradeStamina",
+					[2] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	
+				wait(4)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(VOEKD_fake_script)()
+local function XNFNEYJ_fake_script() -- HomeTab.LocalScript 
+	local script = Instance.new('LocalScript', HomeTab)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.FramesFrame.AutoFarm.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Autos.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.HomeFrame.Visible = true
+		script.Parent.Parent.Parent.FramesFrame.AutoAbility.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoStats.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Credits.Visible = false
+		script.Parent.Parent.Parent.TabNameFrame.TabNameLabel.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(XNFNEYJ_fake_script)()
+local function EQUHBQA_fake_script() -- AutoFarm_2.LocalScript 
+	local script = Instance.new('LocalScript', AutoFarm_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.FramesFrame.HomeFrame.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Autos.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoFarm.Visible = true
+		script.Parent.Parent.Parent.FramesFrame.AutoAbility.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoStats.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Credits.Visible = false
+		script.Parent.Parent.Parent.TabNameFrame.TabNameLabel.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(EQUHBQA_fake_script)()
+local function CWFO_fake_script() -- Autos_2.LocalScript 
+	local script = Instance.new('LocalScript', Autos_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.FramesFrame.HomeFrame.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Autos.Visible = true
+		script.Parent.Parent.Parent.FramesFrame.AutoFarm.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoAbility.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoStats.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Credits.Visible = false
+		script.Parent.Parent.Parent.TabNameFrame.TabNameLabel.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(CWFO_fake_script)()
+local function OICCSLF_fake_script() -- AutoAbility_2.LocalScript 
+	local script = Instance.new('LocalScript', AutoAbility_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.FramesFrame.HomeFrame.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Autos.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoFarm.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoAbility.Visible = true
+		script.Parent.Parent.Parent.FramesFrame.AutoStats.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Credits.Visible = false
+		script.Parent.Parent.Parent.TabNameFrame.TabNameLabel.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(OICCSLF_fake_script)()
+local function CHBHN_fake_script() -- AutoStats_2.LocalScript 
+	local script = Instance.new('LocalScript', AutoStats_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.FramesFrame.HomeFrame.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Autos.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoFarm.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoAbility.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoStats.Visible = true
+		script.Parent.Parent.Parent.FramesFrame.Credits.Visible = false
+		script.Parent.Parent.Parent.TabNameFrame.TabNameLabel.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(CHBHN_fake_script)()
+local function HFWCC_fake_script() -- Credits_2.LocalScript 
+	local script = Instance.new('LocalScript', Credits_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.FramesFrame.HomeFrame.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Autos.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoFarm.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoAbility.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.AutoStats.Visible = false
+		script.Parent.Parent.Parent.FramesFrame.Credits.Visible = true
+		script.Parent.Parent.Parent.TabNameFrame.TabNameLabel.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(HFWCC_fake_script)()
+local function GXKBO_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Credits";
+			Text = "GUI created by CheluAkaGrasu#0001\nMore Scripts on https://unknownro.carrd.co/";})
+	end)
+	
+end
+coroutine.wrap(GXKBO_fake_script)()
+local function HXXFI_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.TopFrame.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(HXXFI_fake_script)()
